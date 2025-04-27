@@ -1,0 +1,101 @@
+.sidebar {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  padding: 28px 18px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 35px;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0);
+  overflow-y: auto;
+}
+
+.sidebar-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.sidebar-link {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+  text-decoration: none;
+  width: 100%;
+}
+.sidebar-link-name {
+  color: #666;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+.sidebar-link.active {
+  background: linear-gradient(
+    180deg,
+    rgba(183, 59, 190, 0.1) 0%,
+    rgba(153, 46, 157, 0.1) 93%
+  );
+}
+.sidebar-link.active .sidebar-link-name {
+  background: var(
+    --Linear,
+    linear-gradient(180deg, #b73bbe 0%, #992e9d 93.51%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sidebar-user {
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  gap: 7px;
+  border-radius: 9px;
+  border: 1px solid rgba(153, 46, 157, 0.27);
+  background: rgba(244, 214, 248, 0.13);
+  width: 100%;
+  cursor: pointer;
+}
+.sidebar-user-detail {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 100%;
+}
+.sidebar-ud-usericon {
+  display: flex;
+  padding: 6px 7px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #f9ebfc;
+  color: #7f2781;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+.sidebar-ud-name {
+  color: #434347;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.3px;
+}

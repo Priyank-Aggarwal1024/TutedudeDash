@@ -1,0 +1,44 @@
+.card-off-badge {
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+  cursor: pointer;
+}
+.card-off-badge-svg {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+  width: fit-content;
+}
+
+.card-off-badge-text {
+  position: absolute;
+  z-index: 2;
+  width: calc(100% - 6px);
+  height: 70%;
+  top: 0;
+  left: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-off-badge-percent {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 9px;
+  font-weight: 600;
+  opacity: 0.9;
+  line-height: 116%;
+}
+.card-off-badge-OFF {
+  opacity: 0.9;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 116%;
+  letter-spacing: 0.4px;
+}

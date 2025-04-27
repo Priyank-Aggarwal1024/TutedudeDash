@@ -1,0 +1,179 @@
+.enrolled-courses {
+  display: flex;
+  padding: 14px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  border-radius: 18px;
+  background: #fff;
+}
+.enrolled-courses-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.enrolled-course-heading {
+  color: #3b3b3e;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+.enrolled-course-nav {
+  display: flex;
+  width: 55px;
+  justify-content: space-between;
+  align-items: center;
+}
+.enrolled-courses-main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 8px;
+}
+.enrolled-course-card {
+  display: flex;
+  min-width: 263px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  border-radius: 14px;
+  border: 1px solid #e5e5e8;
+  background: #fff;
+}
+.ecc-top {
+  display: flex;
+  height: 47px;
+  align-items: center;
+  gap: 12px;
+}
+.ecc-top-detail-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.ecc-top-detail-name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: #450d45;
+  text-overflow: ellipsis;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+}
+.ecc-top-detail-lastwatch {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.ecc-top-detail-lastwatch > span {
+  overflow: hidden;
+  color: #83848d;
+  text-overflow: ellipsis;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.ecc-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+.ecc-middle-row {
+  color: #4c4d52;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.ecc-middle-progress {
+  width: 100%;
+}
+.eccm-progress-top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.eccm-progressbar {
+  width: 100%;
+  background-color: #f5f5f6;
+  height: 8px;
+  border-radius: 4px;
+}
+.eccm-progressbar-filled {
+  background-color: #6bb870;
+  height: 8px;
+  border-radius: 4px;
+}
+.eccm-progress-no {
+  color: #6bb870;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+}
+.eccm-progress-text {
+  color: #686972;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+.ecc-bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.eccb-button {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 14px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.eccb-resume,
+.eccb-certificate {
+  color: #fff;
+  background: linear-gradient(180deg, #b73bbe 0%, #992e9d 93%);
+}
+.eccb-resume-white > span {
+  background: linear-gradient(180deg, #b73bbe 0%, #992e9d 93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.eccb-resume-white {
+  background-color: #fff;
+  border: 1px solid #ac36b2;
+}
