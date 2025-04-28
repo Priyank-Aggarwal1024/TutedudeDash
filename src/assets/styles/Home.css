@@ -54,7 +54,7 @@
 .hmt-card {
   width: 100%;
   position: relative;
-  min-width: 350px;
+  min-width: 410px;
   z-index: 1;
 }
 .htm-card-off {
@@ -227,5 +227,13 @@
   }
   .home-main {
     background: #f4f4f6;
+  }
+}
+@media (width<480px) {
+  .hmt-card-inner > div {
+    max-width: 200px;
+  }
+  .hmt-card {
+    min-width: 375px;
   }
 }

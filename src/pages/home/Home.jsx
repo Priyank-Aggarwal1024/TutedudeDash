@@ -39,7 +39,7 @@ function Home() {
   return (
     <>
       <div className="home">
-        {width > 1024 && <Sidebar />}
+        <Sidebar />
         <div className="home-main">
           <div className="home-main-top">
             <div className="hmt-cards">

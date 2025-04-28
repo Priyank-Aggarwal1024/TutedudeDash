@@ -2,9 +2,12 @@ import {
   BookSvg,
   CertificateSvg,
   DropDownSvg,
+  ExternalLinkSvg,
+  HamburgerSvg,
   logo,
   MedalSvg,
   ReferAndEarnSvg,
+  ReferEarnSvg,
   ResumeSvg,
 } from "@/assets";
 import "../assets/styles/Sidebar.css";
@@ -15,6 +18,9 @@ function Sidebar() {
   return (
     <>
       <div className="sidebar">
+        <div className="sidebar-hamburger">
+          <HamburgerSvg />
+        </div>
         <div className="sidebar-logo">
           <img src={logo} alt="Tutedude Logo" />
         </div>
@@ -104,6 +110,16 @@ function Sidebar() {
               <div className="sidebar-ud-name">{user?.name}</div>
             </div>
             <DropDownSvg />
+          </div>
+        </div>
+        <div className="sidebar-mobilelinks">
+          <div className="sidebar-mobilelink">
+            <span>Upgrade Courses</span>
+            <ExternalLinkSvg />
+          </div>
+          <div className="sidebar-mobilelink">
+            <span>Refer &Earn</span>
+            <ReferEarnSvg />
           </div>
         </div>
       </div>

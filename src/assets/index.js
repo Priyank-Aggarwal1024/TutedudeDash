@@ -30,6 +30,9 @@ import DownloadSvg from "./svg/DownloadSvg";
 import TimerSvg from "./svg/TimerSvg";
 import emerald from "./images/emerald.svg";
 import rank from "./images/rank.svg";
+import ExternalLinkSvg from "./svg/ExternalLinkSvg";
+import HamburgerSvg from "./svg/HamburgerSvg";
+import ReferEarnSvg from "./svg/ReferEarnSvg";
 export {
   BookSvg,
   CertificateSvg,
@@ -52,6 +55,9 @@ export {
   PlaySvg,
   DownloadSvg,
   TimerSvg,
+  ExternalLinkSvg,
+  HamburgerSvg,
+  ReferEarnSvg,
   logo,
   bronzeCup,
   silverCup,

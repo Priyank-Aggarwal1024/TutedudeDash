@@ -99,3 +99,43 @@
   line-height: normal;
   letter-spacing: -0.3px;
 }
+.sidebar-hamburger,
+.sidebar-mobilelinks {
+  display: none;
+}
+@media (width<1024px) {
+  .sidebar-logo,
+  .sidebar-main {
+    display: none;
+  }
+  .sidebar-hamburger {
+    display: flex;
+  }
+  .sidebar {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px 16px;
+    align-items: center;
+  }
+  .sidebar-mobilelinks {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+  .sidebar-mobilelink {
+    display: flex;
+    align-items: center;
+    color: #992e9d;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.2px;
+    gap: 2px;
+  }
+  .sidebar-mobilelink > span {
+    display: inline-block;
+    max-width: 56px;
+  }
+}
