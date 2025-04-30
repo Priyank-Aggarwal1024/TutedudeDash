@@ -119,6 +119,7 @@ function Home() {
           </div>
         ) : (
           <div className="home-bottom-modals">
+            <div className="home-bottom-newtag">New</div>
             <div
               className="home-modal-streak-button home-modal-button"
               onClick={() => dispatch(setOpenStreak(true))}

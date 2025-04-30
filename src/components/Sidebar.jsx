@@ -1,6 +1,7 @@
 import {
   BookSvg,
   CertificateSvg,
+  CrossSvg,
   DropDownSvg,
   ExternalLinkSvg,
   HamburgerSvg,
@@ -12,19 +13,27 @@ import {
 } from "@/assets";
 import "../assets/styles/Sidebar.css";
 import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleNavbar } from "@/features/navbar/navbarSlice";
+import { useState } from "react";
 function Sidebar() {
   const user = useSelector((store) => store.user.user);
+  const { isOpen } = useSelector((store) => store.navbar);
+  const dispatch = useDispatch();
+  const [selectOpen, setSelectOpen] = useState(false);
   return (
     <>
       <div className="sidebar">
-        <div className="sidebar-hamburger">
-          <HamburgerSvg />
+        <div
+          className="sidebar-hamburger"
+          onClick={() => dispatch(toggleNavbar())}
+        >
+          {isOpen ? <CrossSvg /> : <HamburgerSvg />}
         </div>
         <div className="sidebar-logo">
           <img src={logo} alt="Tutedude Logo" />
         </div>
-        <div className="sidebar-main">
+        <div className={`sidebar-main ${isOpen && "sidebar-open"}`}>
           <div className="sidebar-links">
             <NavLink
               className={({ isActive }) =>
@@ -99,7 +108,19 @@ function Sidebar() {
               )}
             </NavLink>
           </div>
-          <div className="sidebar-user">
+          <div
+            className="sidebar-user"
+            onClick={() => setSelectOpen(!selectOpen)}
+          >
+            {selectOpen && (
+              <div
+                className="sidebar-user-select"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <div className="sidebar-user-select-option">Profile</div>
+                <div className="sidebar-user-select-option">Logout</div>
+              </div>
+            )}
             <div className="sidebar-user-detail">
               <div className="sidebar-ud-usericon">
                 {String(user?.name)

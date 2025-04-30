@@ -16,6 +16,20 @@
 .browse-course-nav {
   width: 100%;
   overflow-x: auto;
+  padding-bottom: 6px;
+}
+.browse-course-nav::-webkit-scrollbar {
+  height: 4px;
+}
+
+.browse-course-nav::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 28px;
+}
+
+.browse-course-nav::-webkit-scrollbar-thumb {
+  background-color: #992e9d;
+  border-radius: 28px;
 }
 .browse-course-nav-inner {
   min-width: 100%;

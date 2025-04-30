@@ -1,12 +1,13 @@
 import React from "react";
 
-const HamburgerSvg = ({ color = "#800080" }) => (
+const HamburgerSvg = ({ color = "#800080", ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="29"
     height="29"
     viewBox="0 0 29 29"
     fill="none"
+    {...props}
   >
     <g clipPath="url(#clip0_2402_1996)">
       <path

@@ -33,6 +33,7 @@ import rank from "./images/rank.svg";
 import ExternalLinkSvg from "./svg/ExternalLinkSvg";
 import HamburgerSvg from "./svg/HamburgerSvg";
 import ReferEarnSvg from "./svg/ReferEarnSvg";
+import CrossSvg from "./svg/CrossSvg";
 export {
   BookSvg,
   CertificateSvg,
@@ -58,6 +59,7 @@ export {
   ExternalLinkSvg,
   HamburgerSvg,
   ReferEarnSvg,
+  CrossSvg,
   logo,
   bronzeCup,
   silverCup,

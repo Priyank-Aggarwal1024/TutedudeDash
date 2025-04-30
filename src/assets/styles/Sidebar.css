@@ -68,6 +68,17 @@
   background: rgba(244, 214, 248, 0.13);
   width: 100%;
   cursor: pointer;
+  position: relative;
+}
+.sidebar-user-select {
+  position: absolute;
+  width: 100%;
+  bottom: 110%;
+  left: 0;
+  background-color: white;
+  z-index: 1;
+  border: 1px solid #8027817d;
+  border-radius: 10px;
 }
 .sidebar-user-detail {
   display: flex;
@@ -103,9 +114,48 @@
 .sidebar-mobilelinks {
   display: none;
 }
+.sidebar-user-select-option {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  gap: 6px;
+  border-radius: 8px;
+  text-decoration: none;
+  width: 100%;
+  color: #7f2781;
+}
+.sidebar-user-select-option:hover {
+  background-color: #b73bbe2d;
+  color: #b73bbe;
+}
 @media (width<1024px) {
   .sidebar-logo,
+  .sidebar-user {
+    display: none;
+  }
   .sidebar-main {
+    flex-direction: column;
+    position: fixed;
+    z-index: 100;
+    left: -100%;
+    top: 0;
+    width: 100vw;
+    height: 100dvh;
+    background-color: white;
+    padding: 24px;
+    overflow-y: auto;
+  }
+  .sidebar-open {
+    top: 64px;
+    left: 0;
+    height: calc(100dvh - 64px);
+  }
+  .sidebar-open ~ .sidebar-mobilelinks {
     display: none;
   }
   .sidebar-hamburger {

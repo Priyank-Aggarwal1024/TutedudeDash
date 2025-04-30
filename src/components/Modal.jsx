@@ -1,7 +1,6 @@
 import React from "react";
 import "../assets/styles/Modal.css";
-
-const Modal = ({ children, onClose, open }) => {
+const Modal = ({ onClose, open, children }) => {
   if (!open) {
     return <></>;
   }
@@ -16,5 +15,4 @@ const Modal = ({ children, onClose, open }) => {
     </div>
   );
 };
-
 export default Modal;

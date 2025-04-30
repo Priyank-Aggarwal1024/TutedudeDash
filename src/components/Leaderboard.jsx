@@ -14,7 +14,7 @@ const data = [
 
 const yourRank = { name: "Mafia Boyz", hours: 10, rank: 10 };
 
-const Leaderboard = () => {
+const Leaderboard = ({ className = "" }) => {
   const [tab, setTab] = useState("overall");
   const getMedal = (rank) => {
     if (rank == 1) {
@@ -27,7 +27,7 @@ const Leaderboard = () => {
     return;
   };
   return (
-    <div className="lb-container">
+    <div className={`lb-container ${className}`}>
       <div className="lb-header">
         <h2 className="lb-title">Leaderboard</h2>
         <div className="lb-tabs">
